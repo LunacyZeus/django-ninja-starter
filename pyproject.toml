@@ -12,13 +12,18 @@ dependencies = [
     "django-ninja-extra>=0.22.6",
     "django-ninja-jwt>=5.3.5",
     "django-redis>=5.4.0",
+    "ninja-schema>=0.14.1",
     "openpyxl>=3.1.5",
+    "pyinstrument>=5.0.1",
     "python-dotenv>=1.1.0",
     "uvicorn>=0.34.0",
 ]
 
 [tool.ruff]
-line-length = 79  # 代码最大行宽
+respect-gitignore = true
+line-length = 88
+indent-width = 4
+output-format = "full"
 
 # 常用目录文件夹忽略
 exclude = [
@@ -57,3 +62,8 @@ select = [# 选择的规则
     "W",
     "UP",
 ]
+
+[tool.ruff.format]
+indent-style = "space"
+line-ending = "lf"
+quote-style = "double"
