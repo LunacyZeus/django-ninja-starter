@@ -1,0 +1,23 @@
+[project]
+name = "django-ninja-starter"
+version = "0.1.0"
+description = "django-ninja-starter"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "django>=4.2.20",
+    "django-admin-interface>=0.29.4",
+    "django-cors-headers>=4.7.0",
+    "django-hint>=0.3.2",
+    "django-ninja-extra>=0.22.6",
+    "django-ninja-jwt>=5.3.5",
+    "django-redis>=5.4.0",
+    "openpyxl>=3.1.5",
+    "python-dotenv>=1.1.0",
+    "uvicorn>=0.34.0",
+]
+
+[tool.ruff]
+# Decrease the maximum line length to 79 characters.
+line-length = 79
+src = ["src"]
