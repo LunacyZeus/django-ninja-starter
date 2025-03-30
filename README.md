@@ -1,9 +1,9 @@
-**django-ninja-starter**
-**项目简介**
+**django-ninja-starter**  
+**项目简介**  
 一个基于 Django、django-ninja-extra的快速开发项目脚手架
 项目正在开发中......
 
-**基本功能**
+**基本功能**  
 1.使用现代的、响应式的、扁平化的管理界面django-admin-interface  
 2.使用gunicorn+uvicorn作为生产部署,提供一些详细的部署教程和参数配置  
 3.使用supervisord守护进程部署    
@@ -19,7 +19,7 @@
 tree -I '*.pyc|__init__.py'#输出当前项目文件目录架构
 ```
 
-**TODO**
+**TODO**  
 1.增加docker部署例子  
 2.增加uwsgi部署例子  
 3.增加websocket链接例子  
