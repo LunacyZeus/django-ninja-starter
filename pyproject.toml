@@ -18,6 +18,42 @@ dependencies = [
 ]
 
 [tool.ruff]
-# Decrease the maximum line length to 79 characters.
-line-length = 79
-src = ["src"]
+line-length = 79  # 代码最大行宽
+
+# 常用目录文件夹忽略
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".hg",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "venv",
+]
+
+[tool.ruff.lint]
+ignore = ["F401"]  # 忽略的规则
+
+per-file-ignores = { }
+
+# Allow unused variables when underscore-prefixed.
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+
+select = [# 选择的规则
+    "F",
+    "E",
+    "W",
+    "UP",
+]
