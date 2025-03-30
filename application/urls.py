@@ -15,7 +15,6 @@ Including another URLconf
 """
 
 from django.urls import path
-from django.urls.conf import include
 
 from application.admin import admin_site
 from apps.api import ninja_api

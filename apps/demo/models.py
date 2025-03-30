@@ -1,8 +1,6 @@
 from django.db import models
 from django.utils import timezone
 
-from apps.demo import const
-
 
 class CustomManager(models.Manager):
     def active(self):

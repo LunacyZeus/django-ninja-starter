@@ -1,4 +1,3 @@
-from typing import Optional, List
 from ninja_schema import Schema
 
 

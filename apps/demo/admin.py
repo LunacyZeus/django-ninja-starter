@@ -1,4 +1,5 @@
 from django.contrib import admin
+
 from application.admin import admin_site
 from . import models
 from .actions.group import (

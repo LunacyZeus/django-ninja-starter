@@ -1,10 +1,10 @@
 from collections import OrderedDict
 
+from admin_interface.models import Theme
 from django.contrib import admin
 from django.contrib.auth.admin import GroupAdmin, UserAdmin
 from django.contrib.auth.models import Group, User
 from django.utils.text import capfirst
-from admin_interface.models import Theme
 
 """
 from django_celery_beat.admin import (

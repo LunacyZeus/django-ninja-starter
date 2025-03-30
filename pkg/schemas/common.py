@@ -1,16 +1,15 @@
 from collections import OrderedDict
 from typing import (
     Any,
-    List,
     Generic,
 )
 
-from ninja_extra.schemas.response import T
-from pydantic import BeforeValidator, TypeAdapter, field_validator
 from django.core.paginator import Page
 from ninja import Field, Schema
 from ninja.types import DictStrAny
 from ninja_extra.pagination import PageNumberPaginationExtra
+from ninja_extra.schemas.response import T
+from pydantic import field_validator
 
 
 class CommonOut(Schema):
@@ -18,12 +17,12 @@ class CommonOut(Schema):
 
 
 class BaseNinjaResponseSchema(Schema):
-    items: List[Any]
+    items: list[Any]
     total: int
 
 
 class PaginationResponseSchema(BaseNinjaResponseSchema, Generic[T]):
-    items: List[T]
+    items: list[T]
 
     @field_validator("items", mode="before")
     def validate_items(cls, value: Any) -> Any:

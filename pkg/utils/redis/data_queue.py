@@ -1,6 +1,5 @@
 import json
-import time
-from typing import Set, List, Optional
+from typing import Optional
 
 import redis
 from django_redis import get_redis_connection

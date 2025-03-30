@@ -2,7 +2,7 @@ import json
 
 
 def record_data(file_path, data, is_parse=False):
-    if type(data) == str:
+    if isinstance(data, str):
         if is_parse:
             save_data = json.loads(data)
             save_data = json.dumps(save_data, ensure_ascii=False, indent=4)
